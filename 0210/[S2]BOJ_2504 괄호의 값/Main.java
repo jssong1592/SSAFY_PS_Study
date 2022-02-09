@@ -1,5 +1,3 @@
-package BOJ.S2.BOJ_2504;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Stack;
