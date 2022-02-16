@@ -22,6 +22,7 @@ public class Main {
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
+		//트리의 정보 저장
 		for (int i=0;i<N;i++) {
 			int parent = Integer.parseInt(st.nextToken());
 			
@@ -31,6 +32,7 @@ public class Main {
 			}
 		}
 		
+		//삭제해야할 노드 지정 후, 트리 정보에서 부모 노드를 찾아 연결 삭제
 		int delete = Integer.parseInt(br.readLine());
 		if (parentOf[delete]!=-1)
 			tree[parentOf[delete]].remove(Integer.valueOf(delete));
